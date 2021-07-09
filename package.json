@@ -1,0 +1,11 @@
+{
+  "name": "dummy-shells",
+  "version": "0.0.1",
+  "description": "Dummy versions of shelljs used for testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "folkforms",
+  "license": "ISC"
+}

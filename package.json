@@ -2,9 +2,13 @@
   "name": "dummy-shells",
   "version": "0.0.1",
   "description": "Dummy versions of shelljs used for testing.",
-  "main": "index.js",
+  "main": "dummy-shells.js",
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/folkforms/dummy-shells"
   },
   "author": "folkforms",
   "license": "ISC"

@@ -7,9 +7,9 @@ const dryRunShellJs = {
   },
   exec: arg => {
     console.log(arg);
-    return { code: 0, stdout: dryShellJs._getExecStdOut };
+    return { code: 0, stdout: dryRunShellJs._getExecStdOut };
   },
-  _setExecStdOut: retVal => dummyShellJs._getExecStdOut = retVal,
+  _setExecStdOut: retVal => dryRunShellJs._getExecStdOut = retVal,
   _getExecStdOut: undefined,
 }
 

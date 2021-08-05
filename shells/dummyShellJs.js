@@ -18,8 +18,10 @@ const dummyShellJs = {
   execList: [],
   exec: (...args) => {
     dummyShellJs.execList.push(args.join(" ").trim());
-    return { code: 0 };
+    return { code: 0, stdout: dummyShellJs._getExecStdOut };
   },
+  _setExecStdOut: retVal => dummyShellJs._getExecStdOut = retVal,
+  _getExecStdOut: undefined,
 }
 
 module.exports = dummyShellJs;

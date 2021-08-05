@@ -1,6 +1,6 @@
 {
   "name": "dummy-shells",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Dummy versions of shelljs used for testing.",
   "main": "dummy-shells.js",
   "scripts": {

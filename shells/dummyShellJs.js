@@ -15,6 +15,10 @@ const dummyShellJs = {
     dummyShellJs.execList.push(`cp ${arg1} ${arg2}`);
     return { code: 0 };
   },
+  cd: folder => {
+    dummyShellJs.execList.push(`cd ${folder}`);
+    return { code: 0 };
+  },
   execList: [],
   exec: (...args) => {
     dummyShellJs.execList.push(args.join(" ").trim());

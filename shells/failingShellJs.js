@@ -15,6 +15,10 @@ const failingShellJs = {
     failingShellJs.execList.push(`cp ${arg1} ${arg2}`);
     return { code: 1 };
   },
+  cd: folder => {
+    failingShellJs.execList.push(`cd ${folder}`);
+    return { code: 1 };
+  },
   execList: [],
   exec: (...args) => {
     failingShellJs.execList.push(args.join(" ").trim());

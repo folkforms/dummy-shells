@@ -6,7 +6,7 @@ const dryRunShellJs = {
     return { code: 0 };
   },
   cd: folder => {
-    console.log(`cd folder`);
+    console.log(`cd ${folder}`);
     return { code: 0 };
   },
   exec: arg => {
